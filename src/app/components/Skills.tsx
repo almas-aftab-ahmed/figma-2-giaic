@@ -37,6 +37,6 @@ Continuous Learning: Passionate about staying up-to-date with new web developmen
       
     </div>
   )
-}
+};
 
-export default Skills
+export default Skills;

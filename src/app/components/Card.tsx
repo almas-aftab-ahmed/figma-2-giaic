@@ -35,4 +35,4 @@ const Card: React.FC<propsType> = ({title,desc, img, tags}) => {
   )
 }
 
-export default Card
+export default Card;

@@ -6,6 +6,6 @@ const Footer = () => {
       @ portfolio | All rights reserved 2024.
     </div>
   )
-}
+};
 
-export default Footer
+export default Footer;

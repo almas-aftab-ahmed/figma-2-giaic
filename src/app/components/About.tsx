@@ -13,4 +13,4 @@ I am currently a student at GIAIC, pursuing a course in Artificial Intelligence,
   )
 }
 
-export default About
+export default About;
