@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 
 const testimonals = [
   {
     name: "James Nduku",
     role: "Software Developer",
-    image: "/james-nduku.png", 
+    image: "/james-nduku.png",
     rating: 5,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
   },
@@ -53,16 +53,18 @@ function Testimonals() {
                   ))}
               </div>
 
-            
-              <p className="text-[#676767] italic mb-6">"{testimonal.text}"</p>
+              {/* Testimonial Text */}
+              <p className="text-[#676767] italic mb-6">
+                &ldquo;{testimonal.text}&rdquo;
+              </p>
 
               <div className="flex items-center space-x-4">
-            
+                {/* Profile Image */}
                 <Image
                   src={testimonal.image}
                   alt={testimonal.name}
-                  width={64} 
-                  height={64} 
+                  width={64}
+                  height={64}
                   className="rounded-full object-cover"
                 />
                 <div className="text-left">
@@ -73,18 +75,9 @@ function Testimonals() {
             </div>
           ))}
         </div>
-
-        {/* Pagination Buttons */}
-        <div className="flex justify-center mt-8 space-x-4">
-          <button className="px-6 py-3 bg-[#F7F7F7] rounded-full hover:bg-[#8D8D8D] border-[1px]">
-            ←
-          </button>
-          <button className="px-6 py-3 bg-[#F7F7F7] rounded-full hover:bg-[#8D8D8D] border-[1px]">
-            →
-          </button>
-        </div>
       </div>
     </section>
   );
 }
+
 export default Testimonals;
