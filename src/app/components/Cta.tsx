@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image"; 
+
 function TrustedSection() {
   return (
     <section className="bg-[#F7F7F7] py-16">
@@ -21,11 +24,13 @@ function TrustedSection() {
             { src: "/logo4.png", alt: "Logo 4" },
             { src: "/logo5.png", alt: "Logo 5" },
           ].map((logo, index) => (
-            <img
+            <Image
               key={index}
               src={logo.src}
               alt={logo.alt}
-              className="h-12 grayscale hover:grayscale-0 transition duration-200 mx-4"
+              width={150}  
+              height={50}  
+              className="grayscale hover:grayscale-0 transition duration-200 mx-4"
             />
           ))}
         </div>

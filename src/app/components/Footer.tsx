@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"; 
 
 function Footer() {
   return (
@@ -32,9 +33,20 @@ function Footer() {
           {/* Logo Section with "Ddgsr" */}
           <div className="space-y-4">
             <div className="flex items-center justify-center md:justify-start">
-              <img src="/union.png" alt="Ddsgr Logo" className="h-8" />
+              <Image
+                src="/union.png" 
+                alt="Ddsgr Logo"
+                width={32} 
+                height={32} 
+              />
               {/* Second Logo with a tighter margin */}
-              <img src="/union-2.png" alt="Ddsgr Logo 2" className="h-8 w-auto -ml-6" /> {/* Applied negative margin */}
+              <Image
+                src="/union-2.png" 
+                alt="Ddsgr Logo 2"
+                width={32} 
+                height={32} 
+                className="-ml-6"
+              />
               <span className="text-xl font-bold text-[#000000]">Ddsgr</span>
             </div>
           </div>

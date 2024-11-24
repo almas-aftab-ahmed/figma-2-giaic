@@ -1,25 +1,25 @@
 import React from "react";
-import Link from "next/link";
+import Image from "next/image"; 
 
 const testimonals = [
   {
     name: "James Nduku",
     role: "Software Developer",
-    image: "james-nduku.png",
+    image: "/james-nduku.png", 
     rating: 5,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
   },
   {
     name: "Erick Kipkemboi",
     role: "Scrum Master",
-    image: "erick-kipkemboi.png",
+    image: "/erick-kipkemboi.png",
     rating: 5,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
   },
   {
     name: "Stephen Kerubo",
     role: "UI/UX Designer",
-    image: "stephen-kerubo.png",
+    image: "/stephen-kerubo.png",
     rating: 5,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
   },
@@ -53,15 +53,17 @@ function Testimonals() {
                   ))}
               </div>
 
-              {/* Testimonial Text */}
+            
               <p className="text-gray-600 italic mb-6">"{testimonal.text}"</p>
 
-              {/* User Information */}
               <div className="flex items-center space-x-4">
-                <img
-                  src={testimonal.image} // Dynamic image source
+            
+                <Image
+                  src={testimonal.image}
                   alt={testimonal.name}
-                  className="w-16 h-16 rounded-full object-cover"
+                  width={64} 
+                  height={64} 
+                  className="rounded-full object-cover"
                 />
                 <div className="text-left">
                   <p className="text-sm font-bold">{testimonal.name}</p>

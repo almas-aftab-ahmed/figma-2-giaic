@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image'; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,14 +12,19 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="relative flex items-center">
-          <img
+      
+          <Image
             src="/union.png"
             alt="Ddsgnr Logo1"
+            width={32} // Set width
+            height={32} // Set height
             className="h-8 w-auto"
           />
-          <img
+          <Image
             src="/union-2.png"
             alt="Ddsgnr Logo2"
+            width={32} // Set width
+            height={32} // Set height
             className="h-8 w-auto -ml-6"
           />
           <span className="ml-2 text-lg font-bold text-[#000000] font-inter">

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Image from "next/image"; // Import Image component from next/image
 
 const CoursesSection = () => {
   const courses = [
@@ -88,17 +91,18 @@ const CoursesSection = () => {
               key={index}
               className="bg-[#FFFFFF] border rounded-lg shadow hover:shadow-md transition"
             >
-              <img
+              {/* Use Image component instead of img */}
+              <Image
                 src={course.image}
                 alt={course.title}
+                width={500} // Adjust the width based on your design
+                height={300} // Adjust the height based on your design
                 className="w-full h-48 object-cover rounded-t-lg"
               />
               <div className="p-4">
                 <p className="text-sm text-[#000000] mb-2">{course.category}</p>
                 <h3 className="text-lg font-bold mb-2">{course.title}</h3>
-                <p className="text-[#000000] text-sm mb-4">
-                  {course.description}
-                </p>
+                <p className="text-[#000000] text-sm mb-4">{course.description}</p>
                 <div className="flex justify-between items-center">
                   <button className="px-4 py-2 bg-[#000000] text-[#FFFFFF] text-sm rounded">
                     Enroll Now

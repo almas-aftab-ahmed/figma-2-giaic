@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -23,10 +24,12 @@ const HeroSection = () => {
 
       {/* Right Side Image */}
       <div className="flex-1 relative">
-        <img
-          src="/hero-image.jpg"
+        <Image
+          src="/hero-image.jpg"  
           alt="Hero"
-          className="w-[640px] h-[900px] object-cover shadow-lg md:w-full md:h-auto"
+          width={640}  
+          height={900}  
+          className="object-cover shadow-lg md:w-full md:h-auto"
         />
       </div>
     </section>

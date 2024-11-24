@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image"; 
 import { FaLinkedin, FaTwitter, FaGlobe } from "react-icons/fa";
 
 const teamMembers = [
   {
     name: "James Nduku",
     role: "Marketing Coordinator",
-    image: "james-nduku.png",
+    image: "/james-nduku.png", 
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -15,7 +16,7 @@ const teamMembers = [
   {
     name: "Joseph Munyambu",
     role: "Nursing Assistant",
-    image: "joseph-munyambu.png",
+    image: "/joseph-munyambu.png",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -25,7 +26,7 @@ const teamMembers = [
   {
     name: "Joseph Ngumbau",
     role: "Medical Assistant",
-    image: "joseph-ngumbau.png",
+    image: "/joseph-ngumbau.png",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -35,7 +36,7 @@ const teamMembers = [
   {
     name: "Erick Kipkemboi",
     role: "Web Designer",
-    image: "erick-kipkemboi.png",
+    image: "/erick-kipkemboi.png",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -45,7 +46,7 @@ const teamMembers = [
   {
     name: "Stephen Kerubo",
     role: "President of Sales",
-    image: "stephen-kerubo.png",
+    image: "/stephen-kerubo.png",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -55,7 +56,7 @@ const teamMembers = [
   {
     name: "John Leboo",
     role: "Dog Trainer",
-    image: "john-leboo.png",
+    image: "/john-leboo.png",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -81,10 +82,13 @@ function TeamSection() {
               key={index}
               className="flex flex-col items-center text-center bg-white p-6 shadow-md rounded-md"
             >
-              <img
+        
+              <Image
                 src={member.image}
                 alt={member.name}
-                className="w-24 h-24 object-cover rounded-full mb-4"
+                width={96} 
+                height={96} 
+                className="object-cover rounded-full mb-4"
               />
               <h3 className="text-lg font-semibold">{member.name}</h3>
               <p className="text-sm text-[#000000] mb-4">{member.role}</p>
@@ -95,7 +99,6 @@ function TeamSection() {
                     href={member.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-              
                   >
                     <FaLinkedin className="w-5 h-5" />
                   </a>
@@ -105,7 +108,6 @@ function TeamSection() {
                     href={member.socials.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    
                   >
                     <FaTwitter className="w-5 h-5" />
                   </a>
@@ -115,7 +117,6 @@ function TeamSection() {
                     href={member.socials.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                  
                   >
                     <FaGlobe className="w-5 h-5" />
                   </a>
