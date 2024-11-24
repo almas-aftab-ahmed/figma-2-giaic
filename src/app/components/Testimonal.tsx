@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"; 
 
 const testimonals = [
   {
     name: "James Nduku",
     role: "Software Developer",
-    image: "/james-nduku.png",
+    image: "/james-nduku.png", 
     rating: 5,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
   },
@@ -25,7 +25,7 @@ const testimonals = [
   },
 ];
 
-function Testimonials() {
+function Testimonals() {
   return (
     <section className="py-16 bg-[#F7F7F7]">
       <div className="container mx-auto px-4">
@@ -53,18 +53,16 @@ function Testimonials() {
                   ))}
               </div>
 
-              {/* Testimonial Text */}
-              <p className="text-[#676767] italic mb-6">
-                &ldquo;{testimonal.text}&rdquo;
-              </p>
+            
+              <p className="text-[#676767] italic mb-6">"{testimonal.text}"</p>
 
               <div className="flex items-center space-x-4">
-                {/* Profile Image */}
+            
                 <Image
                   src={testimonal.image}
                   alt={testimonal.name}
-                  width={64}
-                  height={64}
+                  width={64} 
+                  height={64} 
                   className="rounded-full object-cover"
                 />
                 <div className="text-left">
@@ -89,5 +87,4 @@ function Testimonials() {
     </section>
   );
 }
-
-export default Testimonials;
+export default Testimonals;
