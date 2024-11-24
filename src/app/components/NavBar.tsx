@@ -16,15 +16,15 @@ const Navbar = () => {
           <Image
             src="/union.png"
             alt="Ddsgnr Logo1"
-            width={32} // Set width
-            height={32} // Set height
+            width={32} 
+            height={32} 
             className="h-8 w-auto"
           />
           <Image
             src="/union-2.png"
             alt="Ddsgnr Logo2"
-            width={32} // Set width
-            height={32} // Set height
+            width={32} 
+            height={32} 
             className="h-8 w-auto -ml-6"
           />
           <span className="ml-2 text-lg font-bold text-[#000000] font-inter">

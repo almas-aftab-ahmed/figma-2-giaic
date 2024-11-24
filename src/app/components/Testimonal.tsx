@@ -54,7 +54,7 @@ function Testimonals() {
               </div>
 
             
-              <p className="text-gray-600 italic mb-6">"{testimonal.text}"</p>
+              <p className="text-[#676767] italic mb-6">"{testimonal.text}"</p>
 
               <div className="flex items-center space-x-4">
             
@@ -67,7 +67,7 @@ function Testimonals() {
                 />
                 <div className="text-left">
                   <p className="text-sm font-bold">{testimonal.name}</p>
-                  <p className="text-xs text-gray-500">{testimonal.role}</p>
+                  <p className="text-xs text-[#676767]">{testimonal.role}</p>
                 </div>
               </div>
             </div>

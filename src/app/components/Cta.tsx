@@ -8,7 +8,7 @@ function TrustedSection() {
         {/* Text Section */}
         <div className="text-left md:w-1/3 mb-8 md:mb-0">
           <h2 className="text-2xl font-semibold text-[#000000] mb-4">
-            Trusted by the World's Best Companies
+            Trusted by the World&apos;s Best Companies
           </h2>
           <p className="text-[#000000]">
             Join thousands of companies who rely on us to achieve their goals.
