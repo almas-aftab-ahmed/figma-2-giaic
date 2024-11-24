@@ -1,24 +1,36 @@
-import React from 'react';
-import NavBar from './NavBar';
+import React from "react";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <div
-      id="hero"
-      className="min-h-screen bg-no-repeat bg-[url(/cartoon.jpg)] bg-cover"
-      style={{ backgroundSize: "35%", backgroundPosition: "left 100px top 100px" }}
-    >
-      <NavBar />
-      <div className="container grid lg:grid-cols-2 h-[calc(100vh-60px)] items-center">
-        <div className="hidden lg:block"></div>
-        <div className="flex flex-col text-center lg:text-left justify-center items-center lg:items-start">
-          <p className="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" data-aos="zoom-in-up">I am</p>
-          <p className="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" data-aos="zoom-in-up">Almas</p>
-          <p className="text-4xl sm:text-6xl lg:text-8xl font-bold leading-tight" data-aos="zoom-in-up">Aftab</p>
+    <section className="flex flex-col md:flex-row items-center gap-8 min-h-screen w-full p-8 md:p-16">
+      {/* Left Side Content */}
+      <div className="flex-1 flex flex-col justify-center gap-6 px-8 md:px-16 bg-white">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight text-[#000000]">
+          Learn new skills online with ease
+        </h1>
+        <p className="text-[#000000] mb-6 text-lg md:text-xl">
+          Discover a wide range of courses covering a variety of subjects, taught by expert instructors.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-4">
+          <button className="px-8 py-3 bg-[#000000] text-[#FFFFFF] rounded-md text-lg md:text-xl hover:bg-gray-700 transition duration-300">
+            Start learning now
+          </button>
+          <button className="px-8 py-3 border border-[#000000] rounded-md text-[#000000] text-lg md:text-xl hover:bg-gray-100 transition duration-300">
+            Explore Courses
+          </button>
         </div>
       </div>
-    </div>
+
+      {/* Right Side Image */}
+      <div className="flex-1 relative">
+        <img
+          src="/hero-image.jpg"
+          alt="Hero"
+          className="w-[640px] h-[900px] object-cover shadow-lg md:w-full md:h-auto"
+        />
+      </div>
+    </section>
   );
 };
 
-export default Hero;
+export default HeroSection;

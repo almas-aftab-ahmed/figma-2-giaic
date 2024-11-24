@@ -1,39 +1,27 @@
-"use client";
-import React from 'react'
-import Projects from './components/Projects';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from 'react';
-import About from './components/About';
-
-
-
+import Navbar from './components/NavBar';
+import HeroSection from './components/Hero';
+import TrustedSection from './components/Cta';
+import AchievementsSection from './components/Archivement';
+import Courses from './components/Courses';
+import TeamSection from './components/Team';
+import Testimonals from './components/Testimonal';
+import Footer from './components/Footer';
+import Services from './components/Services';
 const Home = () => {
-  useEffect (() =>{
-
-    AOS.init({
-      easing:'ease-out-back',
-      duration:1200,
-      delay:100,
-      mirror:true,
-      anchorPlacement:"bottom-bottom",
-      offset:160,
-    
-    });
-    AOS.refresh();
-  },[]);
   return (
-    <main>
-        <Hero/>
-        <Projects/>
-        <Skills/>
-        <Contact/>
-        <About/>
-    </main>
-  )
+    <>
+      <Navbar />
+      <HeroSection />
+      <TrustedSection/>
+      <Services/>
+      <AchievementsSection/>
+      <Courses/>
+      <TeamSection/>
+      <Testimonals/>
+      <Footer/>
+      
+    </>
+  );
 };
 
 export default Home;
