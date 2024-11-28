@@ -6,10 +6,10 @@ const HeroSection = () => {
     <section className="flex flex-col md:flex-row items-center gap-8 min-h-screen w-full p-8 md:p-16">
       {/* Left Side Content */}
       <div className="flex-1 flex flex-col justify-center gap-6 px-8 md:px-16 bg-white">
-        <h1 className="text-3xl md:text-4xl font-bold leading-tight text-[#000000]">
+        <h1 className="text-xxl md:text-4xl font-Roboto leading-tight text-[#000000] font-bold text-[56px]">
           Learn new skills online with ease
         </h1>
-        <p className="text-[#000000] mb-6 text-lg md:text-xl">
+        <p className="text-[#000000] mb-6 text-lg md:text-xl font-Roboto">
           Discover a wide range of courses covering a variety of subjects, taught by expert instructors.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-4">

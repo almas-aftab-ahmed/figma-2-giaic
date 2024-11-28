@@ -3,6 +3,10 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image'; 
+import { Inter, Roboto } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,7 +61,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex space-x-8">
-          <ul className="flex space-x-6 text-[#000000]">
+          <ul className="flex space-x-6 text-[#000000]  ">
             <li>
               <Link href="/about" className="hover:text-[#676767]">About Us</Link>
             </li>
