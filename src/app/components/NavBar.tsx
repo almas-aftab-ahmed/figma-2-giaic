@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image'; 
-import { Inter, Roboto } from 'next/font/google';
+import { Inter, } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
