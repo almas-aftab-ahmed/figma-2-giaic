@@ -65,8 +65,8 @@ const CoursesSection = () => {
     <section className="bg-[#F7F7F7] py-16 text-[#000000]">
       <div className="container mx-auto text-center px-4">
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-2 text-[#000000]">Courses</h2>
-        <p className="text-[#000000] mb-8">Your Ultimate Guide to Learning</p>
+        <h2 className="text-3xl font-Roboto mb-2 text-[#000000]">Courses</h2>
+        <p className="text-[#000000] mb-8 font-Roboto">Your Ultimate Guide to Learning</p>
 
         {/* Tabs */}
         <div className="flex justify-center gap-8 mb-12">
@@ -116,7 +116,7 @@ const CoursesSection = () => {
 
         {/* View All Button */}
         <div className="mt-12">
-          <button className="px-6 py-2 border border-gray-400 rounded text-black hover:bg-gray-100">
+          <button className="px-6 py-2 border border-gray-400 rounded text-black hover:bg-gray-100 font-Roboto">
             View All Courses
           </button>
         </div>

@@ -18,8 +18,8 @@ const Services = () => {
     <section className="bg-[#FFFFFF] py-16 text-[#000000]">
       <div className="container mx-auto px-4 text-center">
         {/* Heading */}
-        <h2 className="text-2xl font-bold mb-4 text-[#000000] ">Explore Courses By Category</h2>
-        <p className="text-[#000000] mb-12">
+        <h2 className="text-2xl font-Roboto mb-4 text-[#000000] ">Explore Courses By Category</h2>
+        <p className="text-[#000000] mb-12 font-Roboto">
           Discover a wide range of courses covering a variety of subjects, taught by expert instructors.
         </p>
 
@@ -42,7 +42,7 @@ const Services = () => {
 
         {/* Button */}
         <div className="mt-12">
-          <button className="px-6 py-3 border border-[#000000] rounded hover:bg-[#676767] hover:text-[#FFFFFF] transition text-black">
+          <button className="px-6 py-3 border border-[#000000] font-Roboto rounded hover:bg-[#676767] hover:text-[#FFFFFF] transition text-black">
             View All Courses
           </button>
         </div>

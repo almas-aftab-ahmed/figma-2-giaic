@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter, Roboto } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], weight:["400", "700"] });
-const roboto =  Roboto({ subsets: ['latin'], weight:["400"] });
+const roboto =  Roboto({ subsets: ['latin'], weight:["400", "700"] });
 
 
 

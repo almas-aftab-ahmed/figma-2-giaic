@@ -8,8 +8,8 @@ function Footer() {
         {/* Newsletter Section */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-bold text-[#000000]">Subscribe to our newsletter</h3>
-            <p className="text-[#000000]">
+            <h3 className="text-lg font-Roboto text-[#000000]">Subscribe to our newsletter</h3>
+            <p className="text-[#000000] font-Roboto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
@@ -21,7 +21,7 @@ function Footer() {
             />
             <button
               type="submit"
-              className="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 bg-[#000000] text-[#FFFFFF] rounded-md hover:bg-[#000000]"
+              className="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 bg-[#000000] text-[#FFFFFF] font-Roboto rounded-md hover:bg-[#000000]"
             >
               Subscribe
             </button>
@@ -47,7 +47,7 @@ function Footer() {
                 height={32} 
                 className="-ml-6"
               />
-              <span className="text-xl font-bold text-[#000000]">Ddsgr</span>
+              <span className="text-xl font-inter text-[#000000]">Ddsgr</span>
             </div>
           </div>
 
@@ -90,7 +90,7 @@ function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center border-t pt-6">
-          <p className="text-[#000000] text-sm mb-4 md:mb-0">
+          <p className="text-[#000000] text-sm mb-4 md:mb-0 font-Roboto">
             © 2023 Dgdsr. All rights reserved.
           </p>
           <ul className="flex flex-wrap space-x-4 text-[#000000] justify-center md:justify-start">

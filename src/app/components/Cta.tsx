@@ -7,7 +7,7 @@ function TrustedSection() {
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
         {/* Text Section */}
         <div className="text-left md:w-1/3 mb-8 md:mb-0">
-          <h2 className="text-2xl font-semibold text-[#000000] mb-4">
+          <h2 className="text-2xl font-Roboto text-[#000000] mb-4">
             Trusted by the World&apos;s Best Companies
           </h2>
           <p className="text-[#000000]">

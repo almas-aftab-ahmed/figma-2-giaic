@@ -70,8 +70,8 @@ function TeamSection() {
     <section className="py-16 bg-[#F7F7F7] text-[#000000]">
       <div className="container mx-auto text-center px-4 bg-[#F7F7F7]">
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-4 text-[#000000]">Our Team</h2>
-        <p className="text-[#000000] mb-12">
+        <h2 className="text-3xl font-Roboto mb-4 text-[#000000]">Our Team</h2>
+        <p className="text-[#000000] mb-12 font-Roboto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
 

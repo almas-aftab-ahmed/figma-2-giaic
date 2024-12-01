@@ -31,8 +31,8 @@ function Testimonals() {
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#000000]">Customer Testimonials</h2>
-          <p className="text-[#000000]">
+          <h2 className="text-3xl font-Roboto text-[#000000]">Customer Testimonials</h2>
+          <p className="text-[#000000] font-Roboto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
