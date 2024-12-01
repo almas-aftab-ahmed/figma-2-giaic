@@ -3,10 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image'; 
-import { Inter, } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
-
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +27,7 @@ const Navbar = () => {
             height={32} 
             className="h-8 w-auto -ml-6"
           />
-          <span className="ml-2 text-lg font-bold text-[#000000] font-inter">
+          <span className="ml-2 text-lg  text-[#000000] font-inter">
             Ddsgnr
           </span>
         </div>
@@ -61,9 +57,12 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex space-x-8">
-          <ul className="flex space-x-6 text-[#000000]  ">
+          <ul className="flex space-x-6 text-[#000000]  h-[24px] justify-center font-Roboto ">
             <li>
-              <Link href="/about" className="hover:text-[#676767]">About Us</Link>
+              <Link href="/" className='hover:text-[#676767]'>home</Link>
+            </li>
+            <li>
+              <Link href="/cources" className="hover:text-[#676767]">courses</Link>
             </li>
             <li>
               <Link href="/services" className="hover:text-[#676767]">Services</Link>
@@ -72,10 +71,10 @@ const Navbar = () => {
               <Link href="/achievements" className="hover:text-[#676767]">Achievements</Link>
             </li>
             <li>
-              <Link href="/testimonials" className="hover:text-[#676767]">Testimonials</Link>
+              <Link href="/about" className="hover:text-[#676767]">about Us</Link>
             </li>
             <li>
-              <Link href="/courses" className="hover:text-[#676767]">Courses</Link>
+              <Link href="/testimonals" className="hover:text-[#676767]">Testimonals</Link>
             </li>
           </ul>
           {/* Buttons */}

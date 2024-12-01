@@ -28,8 +28,8 @@ const HeroSection = () => {
           src="/hero-image.jpg"  
           alt="Hero"
           width={640}  
-          height={900}  
-          className="object-cover shadow-lg md:w-full md:h-auto"
+          height={900} 
+         objectFit='contain'
         />
       </div>
     </section>
